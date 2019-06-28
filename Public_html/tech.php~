@@ -1,0 +1,19 @@
+<?php
+$mcon=mysqli_connect("hhaq.no-ip.biz","root","ariag25","mydb");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+$mcon1=mysqli_connect("193.166.111.8","hhaq","y7xp9ua1","meteoriihi");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+   $result = mysqli_query("INSERT INTO meteoriihi.dbt1 SELECT * FROM mydb.dbt1");
+
+
+?>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>  Hafiz Haq </title> 
+    <meta name="description" content="Meteoria"> 
+   
+    <!--////		Styles    /////////--> 
+    <link rel='stylesheet' id='fluid_dg-css'  href='css/fluid_dg.css' type='text/css' media='all'> 
+    <style>
+		html,body {
+			height: 100%; margin: 0; padding: 0;
+		}
+		a {
+			color: #fff;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_fluid_dg {
+			background: rgba(2,2,2,.5);
+			clear: both; display: block; height: 20px; line-height: 20px; padding: 20px; position: relative; z-index: 1;
+		}
+		.fluid_container {
+			bottom: 0; height: 100%; left: 0; position: fixed; right: 0; top: 0; z-index: 0;
+		}
+		#fluid_dg_wrap_4 {
+			bottom: 0; height: 100%; left: 0;
+			margin-bottom: 0!important;
+			position: fixed; right: 0; top: 0;
+		}
+		.fluid_dg_bar {
+			z-index: 2;
+		}
+		.fluid_dg_prevThumbs, .fluid_dg_nextThumbs, .fluid_dg_prev, .fluid_dg_next, .fluid_dg_commands, .fluid_dg_thumbs_cont {
+			background: #222;
+			background: rgba(2, 2, 2, .7);
+		}
+		.fluid_dg_thumbs {
+			margin-top: -100px; position: relative; z-index: 1;
+		}
+		.fluid_dg_thumbs_cont {
+			border-radius: 0;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+		}
+		.fluid_dg_overlayer {
+			opacity: .1;
+		}
+	</style>
+</head>
+<body>
+    
+	<div class="fluid_container">
+        <div class="fluid_dg_wrap fluid_dg_emboss pattern_1 fluid_dg_white_skin" id="fluid_dg_wrap_4">
+            <div data-thumb="slides/thumbs/peace_love_and_happiness.jpg" data-src="slides/peace_love_and_happiness-wallpaper-1280x720.jpg"></div>
+            <div data-thumb="slides/thumbs/box_people.jpg" data-src="slides/box_people-wallpaper-1280x720.jpg"></div>
+            <div data-thumb="slides/thumbs/heart_book.jpg" data-src="slides/heart_book-wallpaper-1280x720.jpg"></div>
+            <div data-thumb="slides/thumbs/carnations_bouquet_on_a_bench.jpg" data-src="slides/carnations_bouquet_on_a_bench-wallpaper-1280x720.jpg"></div>
+            <div data-thumb="slides/thumbs/paint_splash_heart.jpg" data-src="slides/paint_splash_heart-wallpaper-1280x720.jpg"></div>
+            <div data-thumb="slides/thumbs/silhouette.jpg" data-src="slides/silhouette-wallpaper-1280x720.jpg"></div>
+        </div><!-- #fluid_dg_wrap_3 -->
+
+    </div><!-- .fluid_container -->
+
+
+    <!--//////////		Scripts    ////////////////--> 
+    
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.2.min.js'></script>
+    <script type='text/javascript' src='Scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='Scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='Scripts/fluid_dg.min.js'></script> 
+    
+    <script>jQuery(document).ready(function(){
+		jQuery(function(){			
+			jQuery('#fluid_dg_wrap_4').fluid_dg({height: 'auto', loader: 'bar', pagination: false, thumbnails: true, hover: false, opacityOnGrid: false, imagePath: ''});
+		}); })
+	</script>
+ 
+</body> 
+</html>
